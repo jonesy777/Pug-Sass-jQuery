@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.text {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.box-wrapper {
+  background: #eee;
+  width: 400px;
+  height: 200px;
+  border-radius: 500px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+.box img {
+  width: 100%;
+  border-radius: 450px;
+}
+
+.initial {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  border-radius: 500px;
+}
+
+.move {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.pill-bg {
+  background: lightyellow;
+}
+
+.main-bg {
+  background: purple;
+}
